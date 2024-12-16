@@ -1,0 +1,12 @@
+.drop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop1{
+    margin-right: 50px;
+}
+
+.lef{
+    margin-left: 50px;
+}

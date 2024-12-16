@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Test</title>
+</head>
+<body>
+  <h1>paginated Table</h1>
+
+<!-- Example single danger button -->
+<div class="btn-group mt-2">
+  <button type="button" class="btn btn-info dropdown-toggle rounded" data-bs-toggle="dropdown" aria-expanded="false">
+    --Choose Page--
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">5</a></li>
+    <li><a class="dropdown-item" href="#">10</a></li>
+    <li><a class="dropdown-item" href="#">20</a></li>
+  </ul>
+</div>
+
+<div>
+  <table class="table table-light table-striped-columns mt-4" >
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">FristName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Avatar</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of userData">
+      <tr>
+        <th>{{item.id}}</th>
+        <td>{{item.first_name}}</td>
+        <td>{{item.last_name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.avatar}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="drop">
+  <p class="lef">Showing 1 0f 20 </p> 
+
+  <div class="drop1">
+    <p>previous <button class="btn rounded border">1</button><button class="btn rounded border">2</button>Next</p>
+  </div>
+  
+</div>
+
+</body>
+</html>
